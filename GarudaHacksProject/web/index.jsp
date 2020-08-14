@@ -15,7 +15,7 @@
         <body>
             <header>
                 <H1>Welcome to Safe Space</H1>
-                <p> Safe Space is an ..</p>
+                <p> Safe Space {is an amazing space for save}..</p>
             </header>
         <section class="features">
             <div> Features </div>
