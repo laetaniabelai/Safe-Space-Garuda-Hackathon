@@ -14,7 +14,7 @@
     <body>
         <nav class="navbar">
             <ul>
-                <li>HOME</li>
+                <li>HOME PAGE</li>
                 <li>FEATURES</li>
                 <li>PLATFORM</li>
                 <li>TERMS & CONDITIONS</li>
