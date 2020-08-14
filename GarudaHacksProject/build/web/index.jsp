@@ -14,7 +14,7 @@
         </head>
         <body>
             <header>
-                <H1>Welcome to Safe Space: the website!</H1>
+                <H1>Welcome to Safe Space</H1>
                 <p> Safe Space is an ..</p>
             </header>
         <section class="features">
