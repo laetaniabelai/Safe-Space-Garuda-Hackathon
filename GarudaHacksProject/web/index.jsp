@@ -34,18 +34,18 @@
                             <div class="register">
                                 <form action="<%=request.getContextPath()%>/LoginServlet" method="post">
                                     <fieldset class="loginframe">
-                                        <input type="text" name="name" placeholder="Enter the email" size="30"> </br></br>
-                                        <input type="password" name="password" placeholder= "Enter password" size="30"> </br></br>
-                                        <button type="submit" value="Submit" class="submit">Submit</button></br></br>
+                                        <input type="text" name="name" placeholder="Enter the email" size="30"> </br>
+                                        <input type="password" name="password" placeholder= "Enter password" size="30"> </br>
+                                        <input type="submit" value="Submit" class="submit"></br></br>
                                     </fieldset>
                                 </form>
                                 </br>
                                 <form action="<%=request.getContextPath()%>/RegisterUserServlet" method="post">
                                     <fieldset class="loginframe">
-                                       <input type="text" name="name" placeholder="Enter Your Username" size="30"> </br></br>
-                                       <input type="text" name="email" placeholder="Enter Your Email" size="30"> </br></br>
-                                       <input type="password" name="password" placeholder="Enter Your Password" size="30"></br></br>
-                                       <input type="submit" value="Submit" class="submit"> </br></br></br>
+                                       <input type="text" name="name" placeholder="Enter Your Username" size="30"> </br>
+                                       <input type="text" name="email" placeholder="Enter Your Email" size="30"> </br>
+                                       <input type="password" name="password" placeholder="Enter Your Password" size="30"></br>
+                                       <input type="submit" value="Submit" class="submit"> </br></br>
                                     </fieldset>
                                 </form>
                             </div>

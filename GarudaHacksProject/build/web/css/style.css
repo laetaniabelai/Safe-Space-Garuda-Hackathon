@@ -47,6 +47,13 @@ body {
     border-radius: 5px;
 }
 
+input {
+  padding: 6px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
 .text {
     width: 50%;
     color: rgb(44, 64, 90)
