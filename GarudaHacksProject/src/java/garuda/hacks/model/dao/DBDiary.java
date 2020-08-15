@@ -49,6 +49,10 @@ public class DBDiary {
     }
     
     public void updateDiary(String date, String title, String problem, String solution) throws SQLException{
-        st.executeUpdate("UPDATE ISDUSER.PRODUCT SET TITLE='" + title + "', PROBLEM='" + problem + "', SOLUTION='" + solution + "' WHERE date=" + date);
+        st.executeUpdate("UPDATE MSS.DIARY SET TITLE='" + title + "', PROBLEM='" + problem + "', SOLUTION='" + solution + "' WHERE date=" + date);
+    }
+    
+    public void deleteDiary(String date) throws SQLException {
+        st.executeUpdate("DELETE FROM MSS.DIARY where date = '" + date + "'");
     }
 }
