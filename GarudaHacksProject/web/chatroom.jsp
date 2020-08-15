@@ -16,7 +16,7 @@
         <div class="container">
             <section class ="msg-header">
                 <div class="msg-header-img">
-                     <img src="img/avatar1.png">
+                     <img src="img/icon_fox.gif">
                 </div>
                 <div class="active">
                     <h4>Username</h4>
