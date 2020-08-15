@@ -15,6 +15,14 @@
         <body>
                 <%@include file = "navbar.jsp" %>
                 <% String errMsg = (String)session.getAttribute("errMsg"); %>
+                <% if (errMsg != null) { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Error has occurred!</strong> <%= errMsg %>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <% } %>
                 </br></br>
                 <section class="headbanner">
                         <div class ="backImage">
@@ -65,14 +73,6 @@
                     </br></br>
                 </section>
                                     
-            <% if (errMsg != null) { %>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Error has occurred!</strong> <%= errMsg %>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <% } %>
         
         <jsp:include page="/ConnServlet" flush="true" />
         
