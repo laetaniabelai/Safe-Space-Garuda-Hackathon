@@ -17,7 +17,7 @@
             <main>
                 </br></br>
                 <section class="headbanner">
-                        <div class="register"
+                        <div class="register">
                             <form action="" method="">
                                 <fieldset class="loginframe">
                                     <input type="text" name="" value="Enter Your Username"size="30"> </br></br>
