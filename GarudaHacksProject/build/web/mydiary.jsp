@@ -1,7 +1,7 @@
 <%-- 
-    Document   : friendlist
-    Created on : Aug 15, 2020, 10:31:24 PM
-    Author     : Finola
+    Document   : mydiary
+    Created on : Aug 16, 2020, 12:13:38 AM
+    Author     : USER
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>My Safe Space</title>
+        <title>JSP Page</title>
     </head>
     <body>
         <h1>Hello World!</h1>

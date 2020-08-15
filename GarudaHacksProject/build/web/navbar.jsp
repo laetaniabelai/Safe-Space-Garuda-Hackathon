@@ -21,9 +21,9 @@
 </svg>
                 </li>
                 <li class="nav-item"><a href="index.jsp"><strong>HOME</strong></a></li>
-                <li class="nav-item"><strong>CHAT ROOM</strong></li>
-                <li class="nav-item"><strong>FRIEND LIST</strong></li>
-                <li class="nav-item"><a href="logout.jsp"></a></li>
+                <li class="nav-item"><a href="account.jsp"><strong>ACCOUNT</strong></li>
+                <li class="nav-item"><a href="mydiary.jsp"><strong>MY DIARY</strong></li>
+                <li class="nav-item"><a href="logout.jsp"><strong>LOGOUT</strong></a></li>
             </ul>
         </nav>
     </body>
