@@ -5,6 +5,7 @@
  */
 
 package garuda.hacks.model;
+import java.io.Serializable;
 
 /**
  *
