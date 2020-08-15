@@ -1,10 +1,14 @@
-package uts.isd.controller;
+package garuda.hacks.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.logging.Level;
+import static java.util.logging.Level.SEVERE;
 import java.util.logging.Logger;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,8 +26,6 @@ public class RegisterUserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String name = request.getParameter("name");
         String password = request.getParameter("password");
-        
-        
         DBUserManager manager = (DBUserManager) session.getAttribute("manager");
         Validator validator = new Validator();
         
@@ -37,7 +39,7 @@ public class RegisterUserServlet extends HttpServlet {
             request.getRequestDispatcher("index.jsp").include(request, response);
             
         // validate password
-        } else if (password instanceof String == false) {                  
+        } else if (!validator.validatePassword(password)) {                  
             
             // set incorrect password error to the session           
             session.setAttribute("errMsg", "Error: password format incorrect");
@@ -61,13 +63,14 @@ public class RegisterUserServlet extends HttpServlet {
                     User user = new User(email, name, password);
                     session.setAttribute("user", user);
 
-                    response.sendRedirect("mainpage.jsp");
+                    request.getRequestDispatcher("mainpage.jsp").include(request, response);
                 } else {
                     session.setAttribute("errMsg", "Error: email is already used");
-                    response.sendRedirect("register.jsp");
+                    request.getRequestDispatcher("mainpage.jsp").include(request, response);
                 }
-            } catch (SQLException ex) {
-                Logger.getLogger(RegisterUserServlet.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SQLException | NullPointerException ex) {
+                //Logger.getLogger(RegisterUserServlet.class.getName()).log(Level.SEVERE, null, ex);
+                ex.printStackTrace();
             }
         }
     }
