@@ -90,6 +90,20 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                ");
  String errMsg = (String)session.getAttribute("errMsg"); 
       out.write("\r\n");
+      out.write("                ");
+ if (errMsg != null) { 
+      out.write("\r\n");
+      out.write("            <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\r\n");
+      out.write("                <strong>Error has occurred!</strong> ");
+      out.print( errMsg );
+      out.write("\r\n");
+      out.write("                <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\r\n");
+      out.write("                <span aria-hidden=\"true\">&times;</span>\r\n");
+      out.write("                </button>\r\n");
+      out.write("            </div>\r\n");
+      out.write("            ");
+ } 
+      out.write("\r\n");
       out.write("                </br></br>\r\n");
       out.write("                <section class=\"headbanner\">\r\n");
       out.write("                        <div class =\"backImage\">\r\n");
@@ -145,20 +159,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </br></br>\r\n");
       out.write("                </section>\r\n");
       out.write("                                    \r\n");
-      out.write("            ");
- if (errMsg != null) { 
-      out.write("\r\n");
-      out.write("            <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\r\n");
-      out.write("                <strong>Error has occurred!</strong> ");
-      out.print( errMsg );
-      out.write("\r\n");
-      out.write("                <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\r\n");
-      out.write("                <span aria-hidden=\"true\">&times;</span>\r\n");
-      out.write("                </button>\r\n");
-      out.write("            </div>\r\n");
-      out.write("            ");
- } 
-      out.write("\r\n");
       out.write("        \r\n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/ConnServlet", out, true);
