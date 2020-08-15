@@ -68,12 +68,16 @@ h6 {
     margin: 0px;
 }
 .platform {
-    background: rgb(44, 64, 90);
+    background-image: url("../img/BG1.jpg");
     width: 100%;
-    color: whitesmoke;
     text-align: center;
     padding: 30px;
     margin: 0px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
 }
 .termsandconditions {
     background: whitesmoke;

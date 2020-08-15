@@ -44,8 +44,7 @@
                                     <fieldset class="loginframe">
                                        <input type="text" name="name" placeholder="Enter Your Username" size="30"> </br></br>
                                        <input type="text" name="email" placeholder="Enter Your Email" size="30"> </br></br>
-                                       <input type="password" name="password" placeholder="Enter Your Password" size="30">
-                                       <h6><input type="checkbox" name="" > I agree to the terms & conditions</h6>
+                                       <input type="password" name="password" placeholder="Enter Your Password" size="30"></br></br>
                                        <input type="submit" value="Submit" class="submit"> </br></br></br>
                                     </fieldset>
                                 </form>
@@ -63,20 +62,22 @@
                         </div>>
                 </section>
                 <section class="features">
-                    <h1> Need Someone To Talk To? </h1>
-                    <p>Chat online with caring listeners and meet people who understand.
-                    </br> You can find support and friendship in chat rooms for many issues like depression, anxiety, relationships, and more.</p>
+                    </br>
+                    <h1> Start Journaling for Your Mental Health </h1>
+                    <p>Start your simple yet important experience of journaling online today. 
+                    </br>Explore new ways to learn more about yourself and how you can take care of your mental health in this difficult time</p>
                     </br></br>
                 </section>
                 <section class="platform">
-                    <h1> Contribute and Provide Mental Support
-                        </br> For Those in Need </h1>
-                    <p> Most people simply needs a good listener. </br>
-                        Be one of them and watch how a conversation can make a difference between a good day and a bad day.</p>
+                     </br>
+                     <h1><em>“Give yourself the same care & attention that you give to others </br> and watch yourself bloom”</em></h1>
                     </br></br>
                 </section>
                 <section class="termsandconditions">
-                    <h1> Terms & Conditions </h1>
+                    </br>
+                    <h1> Learn More About Yourself </h1>
+                    <p> Recognize and track causes of negative emotions and use journaling to help you find ways to reduce them.</br>
+                        Learn to prioritize your problems, concerns, and fear and learn more about yourself. </p>
                     <%--<ul> This is features paragraph </ul>--%>
                     </br></br>
                 </section>
@@ -90,7 +91,6 @@
         </div>
         <% } %>
         <jsp:include page="/ConnServlet" flush="true" />
-        
-        <footer>footer</footer>
         </body>
+        <footer>MY SAFE SPACE<sup>TM</sup> 2020</footer>
     </html>
