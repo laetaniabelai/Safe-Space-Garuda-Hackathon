@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>My Safe Space - Main</title>
+        <title>My Safe Space</title>
         <link rel="stylesheet" href="css/mainpage.css" type="text/css"/>
     </head>
     <body>
