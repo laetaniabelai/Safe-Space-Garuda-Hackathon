@@ -43,4 +43,12 @@ public class DBDiary {
         //if not found - return null
         return null;
     }
+    
+    public void addDiary(String date, String title, String problem, String solution) throws SQLException{
+        st.executeUpdate("INSERT INTO MSS.DIARY (date, title, problem, solution) " + "VALUES ('" + date + "', '" + title + "', '" + problem + "', " + solution + "')");
+    }
+    
+    public void updateDiary(String date, String title, String problem, String solution) throws SQLException{
+        st.executeUpdate("UPDATE ISDUSER.PRODUCT SET TITLE='" + title + "', PROBLEM='" + problem + "', SOLUTION='" + solution + "' WHERE date=" + date);
+    }
 }
