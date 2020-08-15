@@ -34,6 +34,7 @@
                             <div class="register">
                                 <form action="<%=request.getContextPath()%>/LoginServlet" method="post">
                                     <fieldset class="loginframe">
+                                        <legend> Login </legend>
                                         <input type="text" name="name" placeholder="Enter the email" size="30"> </br>
                                         <input type="password" name="password" placeholder= "Enter password" size="30"> </br>
                                         <input type="submit" value="Submit" class="submit"></br></br>
@@ -42,6 +43,7 @@
                                 </br>
                                 <form action="<%=request.getContextPath()%>/RegisterUserServlet" method="post">
                                     <fieldset class="loginframe">
+                                        <legend> Sign Up </legend>
                                        <input type="text" name="name" placeholder="Enter Your Username" size="30"> </br>
                                        <input type="text" name="email" placeholder="Enter Your Email" size="30"> </br>
                                        <input type="password" name="password" placeholder="Enter Your Password" size="30"></br>
@@ -50,7 +52,7 @@
                                 </form>
                             </div>
                         </div>
-                    </br></br></br></br>
+                    </br></br>
                         <div class="text">
                             <H1 class="intro">Welcome to </br> MY SAFE SPACE</H1>
                             <h3 class="intro"> 
@@ -92,5 +94,5 @@
         <% } %>
         <jsp:include page="/ConnServlet" flush="true" />
         </body>
-        <footer>MY SAFE SPACE<sup>TM</sup> 2020</footer>
+        <footer>MY SAFE SPACE<sup>TM</sup> 2020 &nbsp | &nbsp Garuda Hacks</footer>
     </html>

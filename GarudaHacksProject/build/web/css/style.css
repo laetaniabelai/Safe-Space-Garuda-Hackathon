@@ -22,7 +22,7 @@ body {
     color: whitesmoke;
     padding: 40px;
     width: 100%;
-    height: calc(100vh-100px);
+    height: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -42,16 +42,27 @@ body {
     margin: 0px;
     padding: 30px 30px 0px 30px;
     width: 20%;
-    background-color: rgb(104, 130, 158, 0.3);
+    background-color: rgb(104, 130, 158, 0.2);
     border: none;
     border-radius: 5px;
 }
 
+
+
 input {
-  padding: 6px 10px;
+  padding: 10px 14px;
   border-radius: 5px;
   box-sizing: border-box;
-  margin: 5px;
+  margin: 10px;
+  border: 2px solid;
+}
+
+input[type=submit] {
+  background-color: rgb(44, 64, 90);
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 92%;
 }
 
 .text {
@@ -100,4 +111,5 @@ footer {
     width: 100%;
     color: whitesmoke;
     padding: 30px 30px 30px 40px;
+    margin-left: 20px; 
 }
