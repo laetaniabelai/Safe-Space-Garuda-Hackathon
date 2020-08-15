@@ -17,7 +17,7 @@ public class DBUserManager {
 
     // find user by email and password for the login  
     public User loginUser(String email, String password) throws SQLException {       
-       String fetch = String.format("select * from MSS.USERS where \"%s\"='"+email+"' and \"%s\"='"+password+"'", "email", "password");
+       String fetch = "select * from MSS.USERS where email ='"+email+"' and password ='"+password+"'";
        
        ResultSet rs = st.executeQuery(fetch);
        
