@@ -8,3 +8,11 @@ and open the template in the editor.
     Author     : USER
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    color:rgb(44, 64, 90);
+}

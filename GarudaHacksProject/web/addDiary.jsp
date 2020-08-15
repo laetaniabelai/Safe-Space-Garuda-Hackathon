@@ -30,31 +30,31 @@
         <%--<h3 style="text-align:center;"><span class="message" style="color:red;"> <%=(existDeviceErr != null ? existDeviceErr : "")%></span></h3>--%>
         <h3 style="text-align:center;"><span class="message" style="color:red;"> <%=(managerErr != null ? managerErr : "")%></span></h3>
         <br><br><br><br><br>
-        <form method="post" action="addDiaryServlet" >
-            <div style="position: fixed; top: 55%; left: 50%; transform: translate(-50%, -50%);">
-                <div class="form-inline">
-                    <div class="form-group">
-                        <label for="date">Date:</label>
-                        <input class="form-control" type="text" placeholder="<%=(dateErr != null ? dateErr : "Enter Date (MM/dd/yyyy)")%>" name="date">
+            <form method="post" action="addDiaryServlet" >
+                <div style="position: fixed; top: 115%; left: 50%; transform: translate(-50%, -50%);">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="<%=(dateErr != null ? dateErr : "Enter Date (MM/dd/yyyy)")%>" name="date">
+                        </div>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Enter Title" name="title">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="title">Title:</label>
-                        <input class="form-control" type="text" placeholder="Enter Title" name="title">
+                        <label for="problem">Problem Description:</label></br>
+                        <textarea class="form-control" name="problem" placeholder="Describe problems" rows="10" cols="30"></textarea>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="problem">Problem Description:</label>
-                    <textarea class="form-control" name="problem" placeholder="Describe problems" rows="10" cols="30"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="solution" >Solution:</label>
-                    <textarea class="form-control" name="solution" placeholder="Describte how you have solved the problems" rows="10" cols="30"></textarea>
-                </div>
-                <input class="btn btn-secondary" type="submit" value="Submit">
-                <a class="btn btn-secondary" href="myspace.jsp" role="button">Cancel</a>
+                    <div class="form-group">
+                        <label for="solution" >Solution:</label></br>
+                        <textarea class="form-control" name="solution" placeholder="Describte how you have solved the problems" rows="10" cols="30"></textarea>
+                    </div>
+                    <input class="btn btn-secondary" type="submit" value="Submit">
+                    <a class="btn btn-secondary" href="myspace.jsp" role="button">Cancel</a>
 
-                <input type="hidden" name="NewAccount" value="true" />
-            </div>
-        </form>
+                    <input type="hidden" name="NewAccount" value="true" />
+                </div>
+            </form>
+        </main>>
     </body>
 </html>

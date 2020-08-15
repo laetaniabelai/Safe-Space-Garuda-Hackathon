@@ -73,7 +73,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <link rel=\"stylesheet\" href=\"css/navbar.css\" type=\"text/css\"/>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/style.css\" type=\"text/css\"/>\r\n");
       out.write("        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>\r\n");
       out.write("        ");
 
@@ -87,10 +87,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <nav class=\"navbar\">\r\n");
       out.write("            <ul class=\"nav-navbar\">\r\n");
       out.write("                <li class=\"nav-item\">\r\n");
+      out.write("                    <img src=\"img/icon.png\" width=\"40px\" height=\"40px\">\r\n");
       out.write("                    <svg width=\"25px\" height=\"25px\" viewBox=\"0 0 16 16\" class=\"bi bi-chat-dots-fill\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\r\n");
-      out.write("  <path fill-rule=\"evenodd\" d=\"M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z\" />\r\n");
+      out.write("  <path fill-rule=\"evenodd\" d=\"M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z\"/>\r\n");
       out.write("</svg>\r\n");
       out.write("                </li>\r\n");
+<<<<<<< HEAD
       out.write("                <li class=\"nav-item\">\r\n");
       out.write("                    <a href=\"index.jsp\"><strong>HOME</strong></a>\r\n");
       out.write("                </li>\r\n");
@@ -100,6 +102,13 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <a href=\"addDiary.jsp\" role=\"button\"><strong>ADD DIARY</strong></a>\r\n");
       out.write("                </li>\r\n");
       out.write("                <li class=\"nav-item\"><a href=\"logout.jsp\"><strong>LOGOUT</strong></a></li>\r\n");
+=======
+      out.write("                <li class=\"nav-item\">HOME</li>\r\n");
+      out.write("                <li class=\"nav-item\">CHAT ROOM</li>\r\n");
+      out.write("                <li class=\"nav-item\">FRIEND LIST</li>\r\n");
+      out.write("                <li class=\"nav-item\">LOGIN</li>\r\n");
+      out.write("                <li class=\"nav-item\">SIGN UP</li>\r\n");
+>>>>>>> parent of af6e00c... Merge branch 'master' of https://github.com/laetaniabelai/Safe-Space-Garuda-Hackathon
       out.write("            </ul>\r\n");
       out.write("        </nav>\r\n");
       out.write("    </body>\r\n");
@@ -109,13 +118,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
  String errMsg = (String)session.getAttribute("errMsg"); 
       out.write("\r\n");
       out.write("                ");
- 
-                String existErr = (String) session.getAttribute("existErr");
-                String emailErr = (String) session.getAttribute("emailErr");
-                 String passErr = (String) session.getAttribute("passErr");
-                
-      out.write("    \r\n");
-      out.write("            ");
  if (errMsg != null) { 
       out.write("\r\n");
       out.write("            <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\r\n");
@@ -133,23 +135,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <section class=\"headbanner\">\r\n");
       out.write("                        <div class =\"backImage\">\r\n");
       out.write("                            <div class=\"register\">\r\n");
-      out.write("                                <form action=\"");
-      out.print(request.getContextPath());
-      out.write("/LoginServlet\" method=\"post\">\r\n");
+      out.write("                                ");
+      out.write("\r\n");
       out.write("                                    <fieldset class=\"loginframe\">\r\n");
-      out.write("                                        <input type=\"text\" name=\"name\" placeholder=\"Enter the email\" size=\"30\"> </br></br>\r\n");
-      out.write("                                        <input type=\"password\" name=\"password\" placeholder= \"Enter password\" size=\"30\"> </br></br>\r\n");
-      out.write("                                        <button type=\"submit\" value=\"Submit\" class=\"submit\">Submit</button></br></br>\r\n");
+      out.write("                                        <input type=\"text\" name=\"\" value=\"Enter Your Username\"size=\"30\"> </br></br>\r\n");
+      out.write("                                        <input type=\"text\" name=\"\" value=\"Enter Your Password\"size=\"30\"> </br></br>\r\n");
+      out.write("                                        <input type=\"submit\" value=\"Submit\" class=\"submit\"> </br></br>\r\n");
       out.write("                                    </fieldset>\r\n");
-      out.write("                                </form>\r\n");
+      out.write("                                ");
+      out.write("\r\n");
       out.write("                                </br>\r\n");
       out.write("                                <form action=\"");
       out.print(request.getContextPath());
       out.write("/RegisterUserServlet\" method=\"post\">\r\n");
       out.write("                                    <fieldset class=\"loginframe\">\r\n");
-      out.write("                                       <input type=\"text\" name=\"name\" placeholder=\"Enter Your Username\" size=\"30\"> </br></br>\r\n");
-      out.write("                                       <input type=\"text\" name=\"email\" placeholder=\"Enter Your Email\" size=\"30\"> </br></br>\r\n");
-      out.write("                                       <input type=\"password\" name=\"password\" placeholder=\"Enter Your Password\" size=\"30\">\r\n");
+      out.write("                                       <input type=\"text\" name=\"name\" value=\"Enter Your Username\" size=\"30\"> </br></br>\r\n");
+      out.write("                                       <input type=\"text\" name=\"email\" value=\"Enter Your Email\" size=\"30\"> </br></br>\r\n");
+      out.write("                                       <input type=\"password\" name=\"password\" value=\"Enter Your Password\" size=\"30\">\r\n");
       out.write("                                       <h6><input type=\"checkbox\" name=\"\" > I agree to the terms & conditions</h6>\r\n");
       out.write("                                       <input type=\"submit\" value=\"Submit\" class=\"submit\"> </br></br></br>\r\n");
       out.write("                                    </fieldset>\r\n");
@@ -157,6 +159,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </div>\r\n");
       out.write("                        </div>\r\n");
       out.write("                    </br></br></br></br>\r\n");
+<<<<<<< HEAD
       out.write("                        <div class=\"text\">\r\n");
       out.write("                            <H1 class=\"intro\">Welcome to </br> MY SAFE SPACE</H1>\r\n");
       out.write("                            <h3 class=\"intro\"> \r\n");
@@ -166,6 +169,14 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                </br> and start improving your mental health today</h3>\r\n");
       out.write("                        </br></br></br></br></br></br></br></br></br></br></br>\r\n");
       out.write("                        </div>>\r\n");
+=======
+      out.write("                        <H1 class=\"intro\">Welcome to MY SAFE SPACE</H1>\r\n");
+      out.write("                        <h3 class=\"intro\"> MY SAFE SPACE is a free online chat room that allows you \r\n");
+      out.write("                            </br> to connect to millions of people all over the world.</h3>\r\n");
+      out.write("                        <h3 class=\"intro\">Make it your personal space to share with others and listen to their stories\r\n");
+      out.write("                            </br> Start a conversation today.</h3>\r\n");
+      out.write("                    </br></br></br></br></br></br></br></br></br></br></br>\r\n");
+>>>>>>> parent of af6e00c... Merge branch 'master' of https://github.com/laetaniabelai/Safe-Space-Garuda-Hackathon
       out.write("                </section>\r\n");
       out.write("                <section class=\"features\">\r\n");
       out.write("                    <h1> Need Someone To Talk To? </h1>\r\n");
@@ -187,18 +198,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </br></br>\r\n");
       out.write("                </section>\r\n");
       out.write("                                    \r\n");
-      out.write("        ");
- if (existErr != null) { 
-      out.write("\r\n");
-      out.write("        <div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\r\n");
-      out.write("                <strong>Login failed!</strong> Incorrect account details.\r\n");
-      out.write("                <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\">\r\n");
-      out.write("                <span aria-hidden=\"true\">&times;</span>\r\n");
-      out.write("                </button>\r\n");
-      out.write("        </div>\r\n");
-      out.write("        ");
- } 
-      out.write("\r\n");
+      out.write("        \r\n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/ConnServlet", out, true);
       out.write("\r\n");

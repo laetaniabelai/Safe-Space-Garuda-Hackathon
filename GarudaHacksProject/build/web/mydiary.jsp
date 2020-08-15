@@ -16,30 +16,75 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>My Safe Space</title>
+        <link rel="stylesheet" href="css/mydiary.css" type="text/css"/>
     </head>
     <body>
         <%@include file = "navbar.jsp" %>
-        <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Title</th>
-                        <th>Problem Description</th>
-                        <th>Solution</th>
-
-                    </tr>
-                </thead>
-
-
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-
+        <main>
+            <table style="width: 100%">
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Problem Description</th>
+                    <th>Solution</th>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>       
+                </tr>
             </table>
+            </br></br></br>
+        </main>
     </body>
+    <footer>MY SAFE SPACE<sup>TM</sup> 2020 &nbsp | &nbsp Garuda Hacks</footer>
 </html>

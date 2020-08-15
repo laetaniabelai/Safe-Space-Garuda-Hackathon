@@ -10,17 +10,12 @@
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
             <title>My Safe Space</title>
-            <link rel="stylesheet" href="css/style.css" type="text/css"/>
+            <link rel="stylesheet" href="css/home.css" type="text/css"/>
         </head>
         <body>
                 <%@include file = "navbar.jsp" %>
                 <% String errMsg = (String)session.getAttribute("errMsg"); %>
-                <% 
-                String existErr = (String) session.getAttribute("existErr");
-                String emailErr = (String) session.getAttribute("emailErr");
-                 String passErr = (String) session.getAttribute("passErr");
-                %>    
-            <% if (errMsg != null) { %>
+                <% if (errMsg != null) { %>
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Error has occurred!</strong> <%= errMsg %>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -32,18 +27,18 @@
                 <section class="headbanner">
                         <div class ="backImage">
                             <div class="register">
-                                <form action="<%=request.getContextPath()%>/LoginServlet" method="post">
+                                <%--<form action="<%=request.getContextPath()%>/LoginUserServlet" method="post">--%>
                                     <fieldset class="loginframe">
-                                        <legend> Login </legend>
+                                        <legend> <strong>LOGIN</strong> </legend>
                                         <input type="text" name="name" placeholder="Enter the email" size="30"> </br>
                                         <input type="password" name="password" placeholder= "Enter password" size="30"> </br>
                                         <input type="submit" value="Submit" class="submit"></br></br>
                                     </fieldset>
-                                </form>
+                                <%--</form>--%>
                                 </br>
                                 <form action="<%=request.getContextPath()%>/RegisterUserServlet" method="post">
                                     <fieldset class="loginframe">
-                                        <legend> Sign Up </legend>
+                                        <legend> <strong> SIGN UP </strong> </legend>
                                        <input type="text" name="name" placeholder="Enter Your Username" size="30"> </br>
                                        <input type="text" name="email" placeholder="Enter Your Email" size="30"> </br>
                                        <input type="password" name="password" placeholder="Enter Your Password" size="30"></br>
@@ -83,15 +78,6 @@
                     <%--<ul> This is features paragraph </ul>--%>
                     </br></br>
                 </section>
-                                    
-        <% if (existErr != null) { %>
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Login failed!</strong> Incorrect account details.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-        </div>
-        <% } %>
         <jsp:include page="/ConnServlet" flush="true" />
         </body>
         <footer>MY SAFE SPACE<sup>TM</sup> 2020 &nbsp | &nbsp Garuda Hacks</footer>

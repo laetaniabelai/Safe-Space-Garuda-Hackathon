@@ -10,10 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>My Safe Space</title>
+        <link rel="stylesheet" href="css/logout.css" type="text/css"/>
     </head>
     <body>
         <%@include file = "navbar.jsp" %>
-        <p class="display-4">You have logged out, click <a href="index.jsp">here</a> to go to the home page</p>
+        <p>You have logged out, click <a href="index.jsp">here</a> to go to the home page</p>
         <% 
             // logs out the user by clearing the session
             session.invalidate(); 

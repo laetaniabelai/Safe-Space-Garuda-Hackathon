@@ -8,3 +8,41 @@ and open the template in the editor.
     Author     : USER
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding-top: 0;
+}
+main {
+    color: rgb(44, 64, 90);
+    padding-top: 170px;
+}
+
+table, th, td {
+    border: 1px solid rgb(44, 64, 90);
+    border-collapse: collapse;
+}
+
+th, td{padding: 15px}
+
+th {
+    text-align: left;
+    background: rgb(94, 114, 140);
+    color: whitesmoke;
+}
+
+table {
+    border: 2px;
+}
+
+/* Footer */
+footer {
+    background: rgb(44, 64, 90);
+    width: 100%;
+    color: whitesmoke;
+    padding: 30px 30px 30px 40px;
+    margin-left: 0px; 
+}
