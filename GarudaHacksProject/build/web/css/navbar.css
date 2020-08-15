@@ -10,6 +10,11 @@ and open the template in the editor.
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+a{ 
+    color: whitesmoke;
+    text-decoration: none;
+}
+
 .navbar {
     font-family: 'Oswald', sans-serif;
 }

@@ -9,9 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>My Safe Space</title>
     </head>
     <body>
+        <%@include file = "navbar.jsp" %>
         <p class="display-4">You have logged out, click <a href="index.jsp">here</a> to go to the home page</p>
         <% 
             // logs out the user by clearing the session

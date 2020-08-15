@@ -10,14 +10,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>My Safe Space</title>
-        <link rel="stylesheet" href="css/mainpage.css" type="text/css"/>
+        <link rel="stylesheet" href="css/myspace.css" type="text/css"/>
     </head>
     <body>
         <%@include file = "navbar.jsp" %>
         <main>
             <div class="container">
-                <h1>Start A Conversation Now ;)</h1>
-                <button class="btn"><strong>CONNECT</strong></button>
+                <h1>Start A Writing Your Thoughts</h1>
+                <button class="btn"><strong>NEW POST</strong></button>
             </div>
         </main>
     </body>
