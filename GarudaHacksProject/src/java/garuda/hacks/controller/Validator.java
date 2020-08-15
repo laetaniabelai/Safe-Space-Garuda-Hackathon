@@ -17,7 +17,7 @@ public class Validator implements Serializable {
    private String passwordPattern = "[a-z0-9]{4,}";
    private String phonePattern = "0([0-9]+)";
 
-   private String datePattern = "MM/dd/yyyy";
+   private String datePattern = "^(1[0-2]|0[1-9])/(3[01]"+ "|[12][0-9]|0[1-9])/[0-9]{4}$";
 
    public Validator() {
    }
