@@ -13,11 +13,15 @@
     </head>
     <body>
         <nav class="navbar">
-            <ul>
-                <li>HOME</li>
-                <li>FEATURES</li>
-                <li>PLATFORM</li>
-                <li>TERMS & CONDITIONS</li>
+            <ul class="nav-navbar">
+                <li class="nav-item">
+                    <img src="img/icon.png" width="40px" height="40px">
+                </li>
+                <li class="nav-item">HOME</li>
+                <li class="nav-item">CHAT ROOM</li>
+                <li class="nav-item">FRIEND LIST</li>
+                <li class="nav-item">LOGIN</li>
+                <li class="nav-item">SIGN UP</li>
             </ul>
         </nav>
     </body>
