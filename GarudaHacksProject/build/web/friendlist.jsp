@@ -1,7 +1,7 @@
 <%-- 
     Document   : friendlist
     Created on : Aug 15, 2020, 10:31:24 PM
-    Author     : USER
+    Author     : Finola
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>

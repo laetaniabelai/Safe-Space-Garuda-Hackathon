@@ -23,21 +23,22 @@
                 </div>
             </div>
         </section>
-        <section class="chat-page">
-            <div class="msg-inbox">
-                <div class="chats">
+        
+<section class="chat-page">
+<div class="msg-inbox">
+    <div class="chats">
                     <div class="msg-page">
-                    <div class="received-chats">
-                    <div class="received-chats-img">
-                        <img src="img/icon_cat.gif">
-                    </div>
-                        <div class="received-msg">
-                            <div class="received-msg-inbox">
-                                <p>Hi!! This is message from Andrew</p>
-                                <span class="time">11:01PM | August 17</span>
-                            </div>
+                        <div class="received-chats">
+                        <div class="received-chats-img">
+                            <img src="img/icon_cat.gif">
                         </div>
-                    </div>
+                        <div class="received-msg">
+                        <div class="received-msg-inbox">
+                            <p>Hi!! This is message from Andrew</p>
+                            <span class="time">11:01PM | August 17</span>
+                        </div>
+                        </div>
+                        </div>
                 </div>
             </div>    
         </section>
