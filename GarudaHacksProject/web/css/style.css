@@ -39,19 +39,17 @@ body {
     //background-image: url("img/headerBG.jpg");
    // background: rgb(44, 64, 90);
     //color: whitesmoke;
-    background-image: url("/img/headerBG.jpg");
-    background-color: rgb(0,0,0);
     padding: 40px;
     width: 100%;
-    height: calc(100vh-80px);
+    height: calc(100vh-100px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .backImage {    
-    background-image: url("headerBG.jpg");
-    background-color: rgb(255,255,255);
+    background-image: url("img/headerBG.jpg");
+    background-color: #cccccc;
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;

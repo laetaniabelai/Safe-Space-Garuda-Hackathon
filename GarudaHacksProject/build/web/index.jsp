@@ -14,30 +14,30 @@
         </head>
         <body>
                 <%@include file = "navbar.jsp" %>
-            <main>
+                <% String errMsg = (String)session.getAttribute("errMsg"); %>
                 </br></br>
                 <section class="headbanner">
-                    <div class = "backImage">
-                        <div class="register">
-                            <form action="" method="">
+                        <div class ="backImage">
+                            <div class="register">
+                                <%--<form action="<%=request.getContextPath()%>/LoginUserServlet" method="post">--%>
                                     <fieldset class="loginframe">
                                         <input type="text" name="" value="Enter Your Username"size="30"> </br></br>
                                         <input type="text" name="" value="Enter Your Password"size="30"> </br></br>
                                         <input type="submit" value="Submit" class="submit"> </br></br>
                                     </fieldset>
-                            </form>
+                                <%--</form>--%>
                                 </br>
-                            <form action="" method="">
+                                <form action="<%=request.getContextPath()%>/RegisterUserServlet" method="post">
                                     <fieldset class="loginframe">
-                                       <input type="text" name="" value="Enter Your Username" size="30"> </br></br>
-                                       <input type="text" name="" value="Enter Your Email" size="30"> </br></br>
-                                       <input type="text" name="" value="Enter Your Password" size="30">
+                                       <input type="text" name="name" value="Enter Your Username" size="30"> </br></br>
+                                       <input type="text" name="email" value="Enter Your Email" size="30"> </br></br>
+                                       <input type="password" name="password" value="Enter Your Password" size="30">
                                        <h6><input type="checkbox" name="" > I agree to the terms & conditions</h6>
                                        <input type="submit" value="Submit" class="submit"> </br></br></br>
                                     </fieldset>
-                            </form>
+                                </form>
+                            </div>
                         </div>
-                    </div>
                     </br></br></br></br>
                         <H1 class="intro">Welcome to MY SAFE SPACE</H1>
                         <h3 class="intro"> MY SAFE SPACE is a free online chat room that allows you 
@@ -61,10 +61,20 @@
                 </section>
                 <section class="termsandconditions">
                     <h1> Terms & Conditions </h1>
-                    <ul> This is features paragraph </ul>
+                    <%--<ul> This is features paragraph </ul>--%>
                     </br></br>
                 </section>
-        </main>
+                                    
+            <% if (errMsg != null) { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Error has occurred!</strong> <%= errMsg %>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <% } %>
+        
+        <jsp:include page="/ConnServlet" flush="true" />
         
         <footer>footer</footer>
         </body>
