@@ -14,6 +14,7 @@
     </head>
     <body>
         <%@include file = "navbar.jsp" %>
+        </br></br></br></br></br></br></br></br></br></br></br>
         <div class="container">
             <button class="chat">CHAT NOW</button>
         </div>

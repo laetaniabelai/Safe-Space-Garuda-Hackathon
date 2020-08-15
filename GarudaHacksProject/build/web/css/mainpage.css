@@ -9,14 +9,18 @@ and open the template in the editor.
 */
 
 body {
-    background: rgb(44, 64, 90)
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../img/mainpageBG.jpg");
+    background-size: 100%;
     margin: 0px;
     padding: 0px;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.container {
+    margin-top: 100px;
+    text-align: center;
 }
 
