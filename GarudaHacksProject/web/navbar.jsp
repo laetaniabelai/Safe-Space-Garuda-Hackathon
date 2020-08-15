@@ -24,8 +24,7 @@
                 <li class="nav-item">HOME</li>
                 <li class="nav-item">CHAT ROOM</li>
                 <li class="nav-item">FRIEND LIST</li>
-                <li class="nav-item">LOGIN</li>
-                <li class="nav-item">SIGN UP</li>
+                <li class="nav-item">LOGOUT</li>
             </ul>
         </nav>
     </body>
