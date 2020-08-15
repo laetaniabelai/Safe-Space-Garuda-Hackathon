@@ -33,7 +33,7 @@ a{
     font-size: 20px;
     color: whitesmoke;
 }
-.nav-item:hover {
+.hover:hover {
    text-decoration: underline;
    color: red;
 }
