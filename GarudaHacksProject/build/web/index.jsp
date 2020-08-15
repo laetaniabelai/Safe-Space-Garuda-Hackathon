@@ -17,17 +17,17 @@
             <main>
                 </br></br>
                 <section class="headbanner">
-                        <div class ="backImage">
-                            <div class="register">
-                                <form action="" method="">
+                    <div class = "backImage">
+                        <div class="register">
+                            <form action="" method="">
                                     <fieldset class="loginframe">
                                         <input type="text" name="" value="Enter Your Username"size="30"> </br></br>
                                         <input type="text" name="" value="Enter Your Password"size="30"> </br></br>
                                         <input type="submit" value="Submit" class="submit"> </br></br>
                                     </fieldset>
-                                </form>
+                            </form>
                                 </br>
-                                <form action="" method="">
+                            <form action="" method="">
                                     <fieldset class="loginframe">
                                        <input type="text" name="" value="Enter Your Username" size="30"> </br></br>
                                        <input type="text" name="" value="Enter Your Email" size="30"> </br></br>
@@ -35,9 +35,9 @@
                                        <h6><input type="checkbox" name="" > I agree to the terms & conditions</h6>
                                        <input type="submit" value="Submit" class="submit"> </br></br></br>
                                     </fieldset>
-                                </form>
-                            </div>
+                            </form>
                         </div>
+                    </div>
                     </br></br></br></br>
                         <H1 class="intro">Welcome to MY SAFE SPACE</H1>
                         <h3 class="intro"> MY SAFE SPACE is a free online chat room that allows you 
