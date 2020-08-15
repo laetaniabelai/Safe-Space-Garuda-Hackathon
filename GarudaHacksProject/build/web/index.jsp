@@ -15,7 +15,12 @@
         <body>
                 <%@include file = "navbar.jsp" %>
                 <% String errMsg = (String)session.getAttribute("errMsg"); %>
-                <% if (errMsg != null) { %>
+                <% 
+                String existErr = (String) session.getAttribute("existErr");
+                String emailErr = (String) session.getAttribute("emailErr");
+                 String passErr = (String) session.getAttribute("passErr");
+                %>    
+            <% if (errMsg != null) { %>
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Error has occurred!</strong> <%= errMsg %>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -27,19 +32,19 @@
                 <section class="headbanner">
                         <div class ="backImage">
                             <div class="register">
-                                <%--<form action="<%=request.getContextPath()%>/LoginUserServlet" method="post">--%>
+                                <form action="<%=request.getContextPath()%>/LoginServlet" method="post">
                                     <fieldset class="loginframe">
-                                        <input type="text" name="" value="Enter Your Username"size="30"> </br></br>
-                                        <input type="text" name="" value="Enter Your Password"size="30"> </br></br>
-                                        <input type="submit" value="Submit" class="submit"> </br></br>
+                                        <input type="text" name="name" placeholder="Enter the email" size="30"> </br></br>
+                                        <input type="password" name="password" placeholder= "Enter password" size="30"> </br></br>
+                                        <button type="submit" value="Submit" class="submit">Submit</button></br></br>
                                     </fieldset>
-                                <%--</form>--%>
+                                </form>
                                 </br>
                                 <form action="<%=request.getContextPath()%>/RegisterUserServlet" method="post">
                                     <fieldset class="loginframe">
-                                       <input type="text" name="name" value="Enter Your Username" size="30"> </br></br>
-                                       <input type="text" name="email" value="Enter Your Email" size="30"> </br></br>
-                                       <input type="password" name="password" value="Enter Your Password" size="30">
+                                       <input type="text" name="name" placeholder="Enter Your Username" size="30"> </br></br>
+                                       <input type="text" name="email" placeholder="Enter Your Email" size="30"> </br></br>
+                                       <input type="password" name="password" placeholder="Enter Your Password" size="30">
                                        <h6><input type="checkbox" name="" > I agree to the terms & conditions</h6>
                                        <input type="submit" value="Submit" class="submit"> </br></br></br>
                                     </fieldset>
@@ -75,7 +80,14 @@
                     </br></br>
                 </section>
                                     
-        
+        <% if (existErr != null) { %>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>Login failed!</strong> Incorrect account details.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+        </div>
+        <% } %>
         <jsp:include page="/ConnServlet" flush="true" />
         
         <footer>footer</footer>
