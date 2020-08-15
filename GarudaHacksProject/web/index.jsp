@@ -47,12 +47,14 @@
                             </div>
                         </div>
                     </br></br></br></br>
-                        <H1 class="intro">Welcome to MY SAFE SPACE</H1>
-                        <h3 class="intro"> MY SAFE SPACE is a free online chat room that allows you 
-                            </br> to connect to millions of people all over the world.</h3>
-                        <h3 class="intro">Make it your personal space to share with others and listen to their stories
-                            </br> Start a conversation today.</h3>
-                    </br></br></br></br></br></br></br></br></br></br></br>
+                        <div class="text">
+                            <H1 class="intro">Welcome to </br> MY SAFE SPACE</H1>
+                            <h3 class="intro"> MY SAFE SPACE is a free online chat room that allows you 
+                                </br> to connect to millions of people all over the world.</h3>
+                            <h3 class="intro">Make it your personal space to share with others and listen to their stories
+                                </br> Start a conversation today.</h3>
+                        </br></br></br></br></br></br></br></br></br></br></br>
+                        </div>>
                 </section>
                 <section class="features">
                     <h1> Need Someone To Talk To? </h1>

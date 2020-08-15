@@ -17,16 +17,17 @@ body {
 /* Header: Icon + NavBar*/
 .nav-navbar {
     position: fixed;
-    background: whitesmoke;
+    background: rgb(44, 64, 90);
     width: 100%;
     margin: 0px;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 60px 0px 0px;
     list-style-type: none;
 }
 .nav-item {
     display: inline-block;
-    margin: 0px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
     font-size: 15px;
+    color: whitesmoke;
 }
 .nav-item:hover {
    text-decoration: underline;
@@ -36,9 +37,8 @@ body {
 
 /*Home Page: Banner + Welcome Text + Login + Sign Up*/
 .headbanner {
-    //background-image: url("img/headerBG.jpg");
-   // background: rgb(44, 64, 90);
-    //color: whitesmoke;
+    background-image: url("../img/headerBG.jpg");
+    color: whitesmoke;
     padding: 40px;
     width: 100%;
     height: calc(100vh-100px);
@@ -46,23 +46,13 @@ body {
     background-position: center;
     background-size: cover;
 }
-
-.backImage {    
-    background-image: url("img/headerBG.jpg");
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
 .intro {
     margin: 20px;
     display: inline-block flex;
     flex-direction: column;
 }
 .register {
-    float: right;
+    float:right;
     margin: 30px;
     display: flex;
     flex-direction: column;
@@ -70,8 +60,14 @@ body {
 .loginframe {
     margin: 0px;
     padding: 30px 30px 0px 30px;
-    background-color: whitesmoke;
+    width: 20%;
+    background-color: rgb(245, 245, 245, 0.5);
     border: none;
+}
+
+.text {
+    width: 50%;
+    color: rgb(44, 64, 90)
 }
 
 h1 {font-size: 40px;}
