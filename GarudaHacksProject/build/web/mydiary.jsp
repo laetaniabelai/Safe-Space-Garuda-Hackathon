@@ -4,6 +4,12 @@
     Author     : USER
 --%>
 
+<%@page import="java.util.ArrayList"%>
+<%@page import="garuda.hacks.model.dao.*"%>
+<%@page import="java.sql.*"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="garuda.hacks.model.Diary"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +19,27 @@
     </head>
     <body>
         <%@include file = "navbar.jsp" %>
-        <h1>table of existing diaries</h1>
+        <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Title</th>
+                        <th>Problem Description</th>
+                        <th>Solution</th>
+
+                    </tr>
+                </thead>
+
+
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+            </table>
     </body>
 </html>

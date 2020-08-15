@@ -25,7 +25,7 @@ public class DBDiary {
     //find diary from database by date
     
     public Diary findDiary(String date) throws SQLException {
-        String fetch = "SELECT * FROM MSS.PRODUCT WHERE DATE='" + date + "'";
+        String fetch = "SELECT * FROM MSS.DIARY WHERE DATE='" + date + "'";
         ResultSet rs = st.executeQuery(fetch);
         
         while (rs.next()) {
@@ -45,11 +45,11 @@ public class DBDiary {
     }
     
     public void addDiary(String date, String title, String problem, String solution) throws SQLException{
-        st.executeUpdate("INSERT INTO MSS.DIARY (date, title, problem, solution) " + "VALUES ('" + date + "', '" + title + "', '" + problem + "', " + solution + "')");
+        st.executeUpdate("INSERT INTO MSS.DIARY VALUES('" + date + "', '" + title + "', '" + problem + "', '" + solution + "')");
     }
     
     public void updateDiary(String date, String title, String problem, String solution) throws SQLException{
-        st.executeUpdate("UPDATE MSS.DIARY SET TITLE='" + title + "', PROBLEM='" + problem + "', SOLUTION='" + solution + "' WHERE date=" + date);
+        st.executeUpdate("UPDATE MSS.DIARY SET TITLE='" + title + "', PROBLEM='" + problem + "', SOLUTION='" + solution + "' WHERE date= '" + date + "'");
     }
     
     public void deleteDiary(String date) throws SQLException {
