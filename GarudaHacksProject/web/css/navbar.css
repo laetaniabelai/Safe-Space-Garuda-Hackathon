@@ -7,8 +7,11 @@ and open the template in the editor.
     Created on : Aug 15, 2020, 2:04:55 PM
     Author     : USER
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 .navbar {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .nav-navbar {
@@ -16,13 +19,13 @@ and open the template in the editor.
     background: rgb(44, 64, 90);
     width: 100%;
     margin: 0px;
-    padding: 0px 60px 0px 0px;
+    padding: 0px;
     list-style-type: none;
 }
 .nav-item {
     display: inline-block;
     margin: 20px 20px 20px 20px;
-    font-size: 15px;
+    font-size: 20px;
     color: whitesmoke;
 }
 .nav-item:hover {

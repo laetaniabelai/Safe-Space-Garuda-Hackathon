@@ -16,8 +16,8 @@
         <%@include file = "navbar.jsp" %>
         <main>
             <div class="container">
-                <h1>Chat Now</h1>
-                <button class="btn"><strong>CHAT NOW</strong></button>
+                <h1>Start A Conversation Now ;)</h1>
+                <button class="btn"><strong>CONNECT</strong></button>
             </div>
         </main>
     </body>
