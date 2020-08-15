@@ -70,4 +70,19 @@ public class DBDiary {
         }
         return temp;
     }
+    
+    public ArrayList<Diary> searchProduct(String date, String title) throws SQLException {
+        String search = "SELECT * FROM MSS.DIARY WHERE upper(date) like upper('%" +date+ "%') and upper(title) like upper('%" +title+"%')";
+        ResultSet rs = st.executeQuery(search);
+        ArrayList<Diary> temp = new ArrayList<Diary>();
+        
+        while (rs.next()) {
+            String searchDiaryDate = rs.getString(1);
+            String searchDiaryTitle = rs.getString(2);
+            String searchDiaryProblem = rs.getString(3);
+            String searchDiarySolution = rs.getString(4);
+            temp.add(new Diary(searchDiaryDate, searchDiaryTitle, searchDiaryProblem, searchDiarySolution));
+        }
+        return temp;
+    }
 }
