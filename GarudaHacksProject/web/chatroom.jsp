@@ -15,12 +15,13 @@
     <body>
         <div class="container">
             <section class ="msg-header">
-                <div class="msg-header-img"
-                     <img src="../img/avatar1.png">
+                <div class="msg-header-img">
+                     <img src="img/avatar1.png">
                 </div>
                 <div class="active">
                     <h4>Username</h4>
                     <h6>3 hours ago..</h6>
+                </div>
             </section>
         </div>
     </body>
