@@ -17,12 +17,11 @@ and open the template in the editor.
 }
 
 img {
-    width:50px;
-    length:50px;
-    border:10px;
-    border-color: whitesmoke;
-    margin: 20px 15px 20px 20px;
-    float: left;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
 }
 .msg-header {
     border: 1px solid #ccc;
@@ -32,7 +31,15 @@ img {
     display:inline-block;
     background-color:#007bff;
 }
-
+.msg-header-img {
+    background: whitesmoke;
+    border-radius: 50%;
+    width: 40px;
+    length: 40px;
+    margin-left: 5%;
+    margin-top: 12px;
+    float: left;
+}
 .active {
     width: 120px;
     float: left;
@@ -41,5 +48,11 @@ img {
 .active h4 {
     font-size:20px;
     margin-left: 10px;
+    color: #fff;
+}
+.active h6 {
+    font-size: 10px;
+    margin-left: 10px;
+    line-height: 2px;
     color: #fff;
 }
