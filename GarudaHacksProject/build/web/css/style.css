@@ -36,15 +36,25 @@ body {
 
 /*Home Page: Banner + Welcome Text + Login + Sign Up*/
 .headbanner {
-    background-image: url("img/headerBG.jpg");
-    background: rgb(44, 64, 90);
-    color: whitesmoke;
+    //background-image: url("img/headerBG.jpg");
+   // background: rgb(44, 64, 90);
+    //color: whitesmoke;
     padding: 40px;
     width: 100%;
     height: calc(100vh-100px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.backImage {    
+    background-image: url("img/headerBG.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .intro {
     margin: 20px;
