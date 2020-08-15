@@ -16,7 +16,7 @@
         <%@include file = "navbar.jsp" %>
         <main>
             <div class="container">
-                <h1>Start A Writing Your Thoughts</h1>
+                <h1>Start Writing Your Thoughts</h1>
                 <button class="btn"><strong>NEW POST</strong></button>
             </div>
         </main>
