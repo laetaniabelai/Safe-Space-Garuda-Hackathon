@@ -12,5 +12,13 @@ body {
     background: rgb(44, 64, 90)
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    background-image: url("../img/mainpageBG.jpg");
+    color: whitesmoke;
+    padding: 40px;
+    width: 100%;
+    height: calc(100vh-100px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
