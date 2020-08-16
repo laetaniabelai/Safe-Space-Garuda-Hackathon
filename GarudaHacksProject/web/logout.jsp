@@ -14,7 +14,12 @@
     </head>
     <body>
         <%@include file = "navbar.jsp" %>
-        <p>You have logged out, click <a href="index.jsp">here</a> to go to the home page</p>
+        <main>
+            <div class="container">
+                <h1>SEE YOU LATER</br> Until Your Next Thought..</h1>
+                <p>You have logged out, click <a href="home.jsp">here</a> to go to the home page</p>
+            </div>
+        </main>
         <% 
             // logs out the user by clearing the session
             session.invalidate(); 

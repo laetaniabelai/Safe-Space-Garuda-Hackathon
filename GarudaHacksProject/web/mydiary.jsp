@@ -21,6 +21,10 @@
     <body>
         <%@include file = "navbar.jsp" %>
         <main>
+            <h1 style="text-align: center">Safe Space of Thoughts</h1>
+            <p style="text-align: center"> Welcome to your diary catalogue! Click on an existing entry to your older entries </br>
+                or create a new entry.</p>
+            </br>
             <table style="width: 100%">
                 <tr>
                     <th>Date</th>

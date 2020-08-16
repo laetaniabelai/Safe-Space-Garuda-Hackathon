@@ -10,9 +10,21 @@ and open the template in the editor.
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-body {
-    background-color: whitesmoke;
-    font-family: 'Oswald', sans-serif;
-    margin: 0px;
-    color:rgb(44, 64, 90);
+main {
+    overflow:hidden;
 }
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: url("../img/mainpageBG.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 200px;
+
+a {color: red;}

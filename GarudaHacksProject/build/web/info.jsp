@@ -17,9 +17,11 @@
         <main>
             <section class="Title">
                 </br>
-                 <h1>INFORMATION PAGE</h1>
-                 <h1>How you can stay mentally healthy even during self-isolation period</h1>
+                <div> 
+                <h1>INFORMATION PAGE</h1>
+                 <h2>How you can stay mentally healthy even during self-isolation period</h1>
                  </br></br>
+                 </div>
                     </section>
             <section class="features">
                         </br>
