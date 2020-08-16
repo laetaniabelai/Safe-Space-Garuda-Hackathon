@@ -35,7 +35,7 @@
                     </section>
                     <section class="platform">
                          </br>
-                         <h1><em>“Give yourself the same care & attention that you give to others </br> and watch yourself bloom”</em></h1>
+                         <h1><em>“Nourishing yourself in the direction you want to go is attainable, </br>and you are worth the effort.”</em></h1>
                         </br></br>
                     </section>
                     <section class="termsandconditions">

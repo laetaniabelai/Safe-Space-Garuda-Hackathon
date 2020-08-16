@@ -17,7 +17,12 @@
         <main>
             <div class="container">
                 <h1>Start Writing Your Thoughts</h1>
-                <button class="btn"><strong>NEW POST</strong></button>
+                </BR>
+                <button class="btn"><strong>NEW ENTRY</strong></button>
+                &nbsp;&nbsp; &nbsp
+                <button class="btn"><strong>MY SAFE SPACE</strong></button>
+                &nbsp;&nbsp; &nbsp
+                <button class="btn"><strong>INFO PAGE</strong></button>
             </div>
         </main>
     </body>
