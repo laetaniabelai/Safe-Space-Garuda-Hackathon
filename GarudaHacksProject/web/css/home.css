@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 14, 2020, 10:37:46 PM
+    Author     : Finola
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+}
+
+/*Home Page: Banner + Welcome Text + Login + Sign Up*/
+.headbanner {
+    background-image: url("../img/headerBG.jpg");
+    color: whitesmoke;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.intro {
+    margin: 20px;
+    display: inline-block flex;
+    flex-direction: column;
+}
+.register {
+    float:right;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.loginframe {
+    margin: 0px;
+    padding: 30px 30px 0px 30px;
+    width: 20%;
+    background-color: rgb(104, 130, 158, 0.2);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+input {
+  padding: 10px 14px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+  border: 2px solid;
+}
+
+input[type=submit] {
+  background-color: rgb(44, 64, 90);
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+  width: 92%;
+}
+
+.text {
+    width: 50%;
+    color: rgb(44, 64, 90);
+}
+
+h1 {font-size: 40px;}
+h6 {
+    font-size: 12px;
+    color:rgb(44, 64, 90);
+}
+legend{
+    color:rgb(44, 64, 90);
+}
+
+
+/* Information Sections */
+.features {
+    background: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+.platform {
+    background-image: url("../img/BG1.jpg");
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.termsandconditions {
+    background: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+
+/* Footer */
+footer {
+    background: rgb(44, 64, 90);
+    width: 100%;
+    color: whitesmoke;
+    padding: 30px 30px 30px 40px;
+    margin-left: 0px; 
+}

@@ -3,6 +3,10 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import garuda.hacks.model.dao.DBUserManager;
+import java.sql.Connection;
+import garuda.hacks.model.dao.DBConnector;
+import garuda.hacks.model.User;
 
 public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -61,12 +65,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"css/style.css\" type=\"text/css\"/>\r\n");
       out.write("        <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>\r\n");
+      out.write("        ");
+
+        DBConnector connector = new DBConnector();
+        Connection conn = connector.openConnection();
+        DBUserManager db = new DBUserManager(conn);
+        
+      out.write("\r\n");
       out.write("    </head>\r\n");
       out.write("    <body>\r\n");
       out.write("        <nav class=\"navbar\">\r\n");
@@ -77,11 +92,23 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  <path fill-rule=\"evenodd\" d=\"M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z\"/>\r\n");
       out.write("</svg>\r\n");
       out.write("                </li>\r\n");
+<<<<<<< HEAD
+      out.write("                <li class=\"nav-item\">\r\n");
+      out.write("                    <a href=\"index.jsp\"><strong>HOME</strong></a>\r\n");
+      out.write("                </li>\r\n");
+      out.write("                <li class=\"nav-item\"><a href=\"myaccount.jsp\"><strong>MY ACCOUNT</strong></li>\r\n");
+      out.write("                <li class=\"nav-item\"><a href=\"mydiary.jsp\"><strong>MY DIARY</strong></li>\r\n");
+      out.write("                <li class=\"nav-item\">\r\n");
+      out.write("                    <a href=\"addDiary.jsp\" role=\"button\"><strong>ADD DIARY</strong></a>\r\n");
+      out.write("                </li>\r\n");
+      out.write("                <li class=\"nav-item\"><a href=\"logout.jsp\"><strong>LOGOUT</strong></a></li>\r\n");
+=======
       out.write("                <li class=\"nav-item\">HOME</li>\r\n");
       out.write("                <li class=\"nav-item\">CHAT ROOM</li>\r\n");
       out.write("                <li class=\"nav-item\">FRIEND LIST</li>\r\n");
       out.write("                <li class=\"nav-item\">LOGIN</li>\r\n");
       out.write("                <li class=\"nav-item\">SIGN UP</li>\r\n");
+>>>>>>> parent of af6e00c... Merge branch 'master' of https://github.com/laetaniabelai/Safe-Space-Garuda-Hackathon
       out.write("            </ul>\r\n");
       out.write("        </nav>\r\n");
       out.write("    </body>\r\n");
@@ -132,12 +159,24 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            </div>\r\n");
       out.write("                        </div>\r\n");
       out.write("                    </br></br></br></br>\r\n");
+<<<<<<< HEAD
+      out.write("                        <div class=\"text\">\r\n");
+      out.write("                            <H1 class=\"intro\">Welcome to </br> MY SAFE SPACE</H1>\r\n");
+      out.write("                            <h3 class=\"intro\"> \r\n");
+      out.write("                                MY SAFE SPACE is a free online online platform for you  \r\n");
+      out.write("                                </br> to journal out your feelings during this difficult time.</h3>\r\n");
+      out.write("                            <h3 class=\"intro\">Make it your safe space to work through your negative thoughts and emotions \r\n");
+      out.write("                                </br> and start improving your mental health today</h3>\r\n");
+      out.write("                        </br></br></br></br></br></br></br></br></br></br></br>\r\n");
+      out.write("                        </div>>\r\n");
+=======
       out.write("                        <H1 class=\"intro\">Welcome to MY SAFE SPACE</H1>\r\n");
       out.write("                        <h3 class=\"intro\"> MY SAFE SPACE is a free online chat room that allows you \r\n");
       out.write("                            </br> to connect to millions of people all over the world.</h3>\r\n");
       out.write("                        <h3 class=\"intro\">Make it your personal space to share with others and listen to their stories\r\n");
       out.write("                            </br> Start a conversation today.</h3>\r\n");
       out.write("                    </br></br></br></br></br></br></br></br></br></br></br>\r\n");
+>>>>>>> parent of af6e00c... Merge branch 'master' of https://github.com/laetaniabelai/Safe-Space-Garuda-Hackathon
       out.write("                </section>\r\n");
       out.write("                <section class=\"features\">\r\n");
       out.write("                    <h1> Need Someone To Talk To? </h1>\r\n");

@@ -1,0 +1,16 @@
+SMAP
+myspace_jsp.java
+JSP
+*S JSP
+*F
++ 0 myspace.jsp
+myspace.jsp
++ 1 navbar.jsp
+navbar.jsp
+*L
+5,12:53
+5#1,14:65
+19,4:80
+22,24:84
+16#0,10:107
+*E

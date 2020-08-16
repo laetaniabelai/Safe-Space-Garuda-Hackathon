@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 16, 2020, 3:28:26 AM
+    Author     : USER
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    padding: 0;
+    color: rgb(44, 64, 90);
+}
+
+main{padding-top: 80px;}
+li {
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* Information Sections */
+.Title {
+    background-image: url("../img/BG2.jpg");
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.Title h1 {font-size: 50px;}
+    
+.features {
+    background: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+.platform {
+    background-image: url("../img/BG1.jpg");
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    color: whitesmoke;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.termsandconditions {
+    background: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+}
+
+/* Footer */
+footer {
+    background: rgb(44, 64, 90);
+    width: 100%;
+    color: whitesmoke;
+    padding: 30px 30px 30px 40px;
+    margin-left: 0px; 
+}
