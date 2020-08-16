@@ -13,7 +13,13 @@
         <title>Friend List</title>
     </head>
     <body>
+         <%@include file = "navbar.jsp" %>
         <h1>This is the friend's list!</h1>
-        
+        <main>
+            <br><br>
+            <section class ="list">
+                
+            </section>
+        </main>
     </body>
 </html>
