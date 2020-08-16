@@ -126,7 +126,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                                ");
       out.write("\r\n");
       out.write("                                    <fieldset class=\"loginframe\">\r\n");
-      out.write("                                        <legend> <strong>LOGIN</strong> </legend>\r\n");
+      out.write("                                        <legend> Login </legend>\r\n");
       out.write("                                        <input type=\"text\" name=\"name\" placeholder=\"Enter the email\" size=\"30\"> </br>\r\n");
       out.write("                                        <input type=\"password\" name=\"password\" placeholder= \"Enter password\" size=\"30\"> </br>\r\n");
       out.write("                                        <input type=\"submit\" value=\"Submit\" class=\"submit\"></br></br>\r\n");
@@ -138,7 +138,7 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.print(request.getContextPath());
       out.write("/RegisterUserServlet\" method=\"post\">\r\n");
       out.write("                                    <fieldset class=\"loginframe\">\r\n");
-      out.write("                                        <legend> <strong> SIGN UP </strong> </legend>\r\n");
+      out.write("                                        <legend> Sign Up </legend>\r\n");
       out.write("                                       <input type=\"text\" name=\"name\" placeholder=\"Enter Your Username\" size=\"30\"> </br>\r\n");
       out.write("                                       <input type=\"text\" name=\"email\" placeholder=\"Enter Your Email\" size=\"30\"> </br>\r\n");
       out.write("                                       <input type=\"password\" name=\"password\" placeholder=\"Enter Your Password\" size=\"30\"></br>\r\n");
@@ -179,11 +179,11 @@ public final class home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("                    </br></br>\r\n");
       out.write("                </section>\r\n");
+      out.write("            <footer>MY SAFE SPACE<sup>TM</sup> 2020 &nbsp | &nbsp Garuda Hacks</footer>  \r\n");
       out.write("        ");
       org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "/ConnServlet", out, true);
       out.write("\r\n");
       out.write("        </body>\r\n");
-      out.write("        <footer>MY SAFE SPACE<sup>TM</sup> 2020 &nbsp | &nbsp Garuda Hacks</footer>\r\n");
       out.write("    </html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

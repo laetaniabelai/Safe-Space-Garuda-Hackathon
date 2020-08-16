@@ -24,8 +24,9 @@
             String dateErr = (String) session.getAttribute("dateErr");
             String exceptionErr = (String) session.getAttribute("exceptionErr");
         %>
+        </br>
         <%@ include file="navbar.jsp" %>
-        
+        </br></br>
         <h1 style="text-align:center;">Create New Diary</h1>
         <%--<h3 style="text-align:center;"><span class="message" style="color:red;"> <%=(existDeviceErr != null ? existDeviceErr : "")%></span></h3>--%>
         <h3 style="text-align:center;"><span class="message" style="color:red;"> <%=(managerErr != null ? managerErr : "")%></span></h3>
@@ -42,7 +43,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="problem">Problem Description:</label></br>
+                       </br> <label for="problem">Problem Description:</label></br>
                         <textarea class="form-control" name="problem" placeholder="Describe problems" rows="10" cols="30"></textarea>
                     </div>
                     <div class="form-group">
